@@ -1,0 +1,49 @@
+@import url("../../components.css");
+
+.color-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 1rem 0;
+}
+
+.color-card{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 3px;
+}
+
+.color-card-primary{
+    background-color: var(--color-primary);
+}
+.color-card-secondary{
+    background-color: var(--color-secondary);
+}
+.color-card-success{
+    background-color: var(--color-success);
+}
+.color-card-danger{
+    background-color: var(--color-danger);
+}
+.color-card-warning{
+    background-color: var(--color-warning);
+}
+.color-card-info{
+    background-color: var(--color-info);
+}
+.color-card-dark{
+    background-color: var(--color-dark);
+}
+.color-card-gray{
+    background-color: var(--color-gray);
+}
+
+.hexcode{
+    color: var(--color-white);
+    font-weight: var(--font-medium);
+    margin: 10px;
+    padding: 5px 4px;
+    border-radius: var(--border-sm);
+}

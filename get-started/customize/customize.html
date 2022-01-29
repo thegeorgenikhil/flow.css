@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="shortcut icon"
+    href="../../assets/favicon.png"
+    type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+    crossorigin="anonymous"
+    />
+    <title>flow.css - Typography</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="../installation/installation.html" class="group-item">Installation</a></li>
+              <li><a href="../colors/colors.html" class="group-item">Colors</a></li>
+              <li><a href="../typography/typography.html" class="group-item">Typography</a></li>
+              <li><a href="../customize/customize.html" class="group-item active">Customize</a></li>
+              <li><a href="../conclusion/conclusion.html" class="group-item">Conclusion</a></li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Customize</h1>
+            <p class="docs-primary-content">
+              There are times when you need something different than what's
+              available. Learn how to customize
+              <strong class="color-primary">flow.css</strong> to suit your
+              needs.
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">
+              Writing Custom Classes
+            </h2>
+            <p class="docs-secondary-content">
+              The easiest way to customize is to make your own stylesheet and
+              link it the your html files. By this way you can write custom
+              properities and styles and just need to add those classes to your
+              elements or components.
+            </p>
+            <p class="docs-secondary-content">
+              In order to override base classes, users can add their own class
+              to the pre-existing classes, and style them seperately, as shown
+              below.
+            </p>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;button class="btn btn-primary custom-style"&gt;Primary Button&lt;/button&gt;
+                        
+        &lt;-- Custom class styling --&gt;
+        &lt;style&gt;
+            .custom-style{
+                color : black;
+                background-color : pink; 
+            }
+        &lt;/style&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../typography/typography.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Typography</a
+            >
+            <a
+              href="../conclusion/conclusion.html"
+              class="footer-link format-link"
+              >Conclusion <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="shortcut icon"
+    href="../../assets/favicon.png"
+    type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+    crossorigin="anonymous"
+    />
+    <title>flow.css - Typography</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="../installation/installation.html" class="group-item">Installation</a></li>
+              <li><a href="../colors/colors.html" class="group-item">Colors</a></li>
+              <li><a href="../typography/typography.html" class="group-item active">Typography</a></li>
+              <li><a href="../customize/customize.html" class="group-item">Customize</a></li>
+              <li><a href="../conclusion/conclusion.html" class="group-item">Conclusion</a></li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Typography</h1>
+            <p class="docs-primary-content">
+              Documentation and examples for
+              <strong class="color-primary">flow.css</strong> typography,
+              including global settings, font-sizes, family, weights, colors,
+              and more.
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Font Family</h2>
+            <p class="docs-secondary-content">
+              <strong class="color-primary">flow.css</strong> uses
+              <a href="" class="color-primary">Inter</a>, as its default font,
+              which is a free font available at Google Fonts.
+            </p>
+            <div class="code-container">
+              <pre>
+                    <code class="language-css">
+        /* By Default imported in flow.css */
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+                    </code>
+                </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Font Sizes</h2>
+            <p class="docs-secondary-content">
+              <strong class="color-primary">flow.css</strong> uses class based
+              font sizes instead of using the heading tags. We have decided to
+              uses classes as it provides more flexibility to the user. Apart
+              from that all the heading tags, are available and you can even use
+              a mixture of heading tags and font-size classes for better
+              accessibility. For classes you can chose from 7 sizes:
+            </p>
+            <div class="display-container">
+              <p class="text-xl">This is extra-large text</p>
+              <div class="divider-sm"></div>
+              <p class="text-lg">This is large text</p>
+              <div class="divider-sm"></div>
+              <p class="text-md">This is medium text</p>
+              <div class="divider-sm"></div>
+              <p class="text-regular">This is regular text</p>
+              <div class="divider-sm"></div>
+              <p class="text-base">This is base text</p>
+              <div class="divider-sm"></div>
+              <p class="text-sm">This is small text</p>
+              <div class="divider-sm"></div>
+              <p class="text-xs">This is extra-small text</p>
+            </div>
+            <div class="code-container">
+              <pre>
+                    <code class="language-html">
+        &lt;p class="text-xl"&gt;This is extra-large text&lt;/p&gt;
+
+        &lt;p class="text-lg"&gt;This is large text&lt;/p&gt;
+
+        &lt;p class="text-md"&gt;This is medium text&lt;/p&gt;
+
+        &lt;p class="text-regular"&gt;This is regular text&lt;/p&gt;
+
+        &lt;p class="text-base"&gt;This is base text&lt;/p&gt;
+
+        &lt;p class="text-sm"&gt;This is small text&lt;/p&gt;
+
+        &lt;p class="text-xs"&gt;This is extra-small text&lt;/p&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Font Weights</h2>
+            <p class="docs-secondary-content"> 
+                Select from 6 different font weights: 
+              </p>
+              <div class="display-container">
+                <p class="font-extrabold">This is extra-bold text</p>
+                <div class="divider-sm"></div>
+                <p class="font-bold">This is bold text</p>
+                <div class="divider-sm"></div>
+                <p class="font-semibold">This is semibold text</p>
+                <div class="divider-sm"></div>
+                <p class="font-medium">This is medium text</p>
+                <div class="divider-sm"></div>
+                <p class="font-regular">This is regular text</p>
+                <div class="divider-sm"></div>
+                <p class="font-light">This is light text</p>
+                <div class="divider-sm"></div>
+                <p class="font-extralight">This is extralight text</p>
+              </div>
+              <div class="code-container">
+                <pre>
+                      <code class="language-html">
+        &lt;p class="font-extrabold"&gt;This is extra-bold text&lt;/p&gt;
+
+        &lt;p class="font-bold"&gt;This is bold text&lt;/p&gt;
+
+        &lt;p class="font-semibold"&gt;This is semibold text&lt;/p&gt;
+
+        &lt;p class="font-medium"&gt;This is medium text&lt;/p&gt;
+
+        &lt;p class="font-regular"&gt;This is regular text&lt;/p&gt;
+
+        &lt;p class="font-light"&gt;This is light text&lt;/p&gt;
+
+        &lt;p class="font-extralight"&gt;This is extralight text&lt;/p&gt;
+                      </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+            <h2 class="docs-sub-heading">Font Colors</h2>
+            <p class="docs-secondary-content"> 
+                All the theme colors, plus an add-on of white is avaliable as font colours
+              </p>
+              <div class="display-container">
+                <p class="color-primary">This is primary text</p>
+                <div class="divider-sm"></div>
+                <p class="color-secondary">This is secondary text</p>
+                <div class="divider-sm"></div>
+                <p class="color-success">This is success text</p>
+                <div class="divider-sm"></div>
+                <p class="color-danger">This is danger text</p>
+                <div class="divider-sm"></div>
+                <p class="color-warning">This is warning text</p>
+                <div class="divider-sm"></div>
+                <p class="color-info">This is info text</p>
+                <div class="divider-sm"></div>
+                <p class="color-dark">This is dark text</p>
+                <div class="divider-sm"></div>
+                <p class="color-white">This is white text</p>
+                <div class="divider-sm"></div>
+                <p class="color-gray">This is gray text</p>
+              </div>
+              <div class="code-container">
+                <pre>
+                      <code class="language-html">
+        &lt;p class="color-primary"&gt;This is primary text&lt;/p&gt;
+
+        &lt;p class="color-secondary"&gt;This is secondary text&lt;/p&gt;
+
+        &lt;p class="color-success"&gt;This is success text&lt;/p&gt;
+
+        &lt;p class="color-danger"&gt;This is danger text&lt;/p&gt;
+
+        &lt;p class="color-warning"&gt;This is warning text&lt;/p&gt;
+
+        &lt;p class="color-info"&gt;This is info text&lt;/p&gt;
+        
+        &lt;p class="color-dark"&gt;This is dark text&lt;/p&gt;
+        
+        &lt;p class="color-white"&gt;This is white text&lt;/p&gt;
+
+        &lt;p class="color-gray"&gt;This is gray text&lt;/p&gt;
+                      </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../colors/colors.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Colors</a
+            >
+            <a
+              href="../customize/customize.html"
+              class="footer-link format-link"
+              >Customize <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
