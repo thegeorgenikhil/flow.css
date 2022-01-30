@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./avatar.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Avatar</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Avatar</h1>
+            <p class="docs-primary-content">
+              Avatars are typically used to display a user profile as a picture,
+              an icon, or short text. Chose from different shapes and sizes
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Basic Avatars</h2>
+            <p class="docs-secondary-content">
+              Avatars can be created using the avatar class.
+            </p>
+            <div class="display-container flex justify-center">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBvcnRyYWl0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="avatar"
+                class="avatar"
+              />
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;img src="url-of-image" alt="avatar" class="avatar"/&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Avatar Sizes</h2>
+            <p class="docs-secondary-content">
+              Change the avatar sizes using <code>avatar-[lg | md | sm]</code> along with the avatar class.
+            </p>
+            <div class="display-container flex justify-center align-center gap-20">
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-lg"
+              />
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-md"
+              />
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-sm"
+              />
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;img src="url-of-image" alt="avatar" class="avatar avatar-lg"/&gt;
+        &lt;img src="url-of-image" alt="avatar" class="avatar avatar-md"/&gt;
+        &lt;img src="url-of-image" alt="avatar" class="avatar avatar-sm"/&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Squared Avatars</h2>
+            <p class="docs-secondary-content">
+              You can make the avatars as square by using <code>avatar-square</code> .
+            </p>
+            <div class="display-container flex justify-center align-center gap-20">
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-lg avatar-square"
+              />
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-md avatar-square"
+              />
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-sm avatar-square"
+              />
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;img src="url-of-image" alt="avatar" class="avatar avatar-lg avatar-square"/&gt;
+        &lt;img src="url-of-image" alt="avatar" class="avatar avatar-md avatar-square"/&gt;
+        &lt;img src="url-of-image" alt="avatar" class="avatar avatar-sm avatar-square"/&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Avatar With Icons</h2>
+            <p class="docs-secondary-content">
+              Icons can also be used as avatars.
+            </p>
+            <div class="display-container flex justify-center align-center gap-20">
+              <div class="avatar-icon bg-primary"><i class="fab fa-github"></i></div>
+              <div class="avatar-icon bg-secondary"><i class="fab fa-github"></i></div>
+              <div class="avatar-icon bg-success"><i class="fab fa-github"></i></div>
+              <div class="avatar-icon bg-danger"><i class="fab fa-github"></i></div>
+              <div class="avatar-icon bg-warning"><i class="fab fa-github"></i></div>
+              <div class="avatar-icon bg-info"><i class="fab fa-github"></i></div>
+              <div class="avatar-icon avatar-square bg-dark"><i class="fab fa-github"></i></div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="avatar-icon bg-primary"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-icon bg-secondary"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-icon bg-success"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-icon bg-danger"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-icon bg-warning"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-icon bg-info"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-icon avatar-square bg-dark"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Avatar With Text</h2>
+            <p class="docs-secondary-content">
+              Easily use texts as avatars with <code>avatar-text</code> class.
+            </p>
+            <div class="display-container flex justify-center align-center gap-20">
+              <div class="avatar-text bg-primary">NG</div>
+              <div class="avatar-text avatar-square bg-dark">NG</div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="avatar-text bg-primary"&gt;NG&lt;/i&gt;&lt;/div&gt;
+        &lt;div class="avatar-text avatar-square bg-dark"&gt;NG&lt;/i&gt;&lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a
+              href="../../get-started/conclusion/conclusion.html"
+              class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Conclusion</a
+            >
+            <a href="../Alert/alert.html" class="footer-link format-link"
+              >Alert <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
