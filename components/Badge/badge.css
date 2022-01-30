@@ -16,9 +16,15 @@
 }
 
 .badge-number{
-    position: absolute;
     padding: 1px 6px;
     font-size: var(--text-xs);
     right: -14px;
     top: -2px;
+}
+
+.badge-number-sm{
+    font-size: 8px;
+    right: -10px;
+    top: -4px;
+    padding: 1px 5px;
 }
