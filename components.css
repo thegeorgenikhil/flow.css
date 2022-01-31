@@ -21,6 +21,7 @@
   --color-white: #ffffff;
 
   --color-display-container: #f8f9fa;
+  --color-markdown:#343942;
 
   /* FONT SIZE */
   --text-xl: 3rem;
@@ -43,11 +44,16 @@
   --font-extralight: 200;
 
   /* BORDER RADIUS */
-  --border-rounded: 999px;
+  --border-rounded: 99999px;
   --border-lg: 15px;
   --border-md: 10px;
   --border-sm: 5px;
+  --border-xs: 3px;
+
+  /* BOX SHADOW */
+  --shadow-sm:0px 2px 15px rgba(0,0,0,0.05);
 }
+
 
 /* COLOR STYLES */
 
@@ -84,6 +90,43 @@
 
 .color-white {
   color: var(--color-white);
+}
+
+/* BACKGROUND COLOR STYLES */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-success {
+  background-color: var(--color-success);
+}
+
+.bg-danger {
+  background-color: var(--color-danger);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}
+
+.bg-info {
+  background-color: var(--color-info);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.bg-white {
+  background-color: var(--color-white);
 }
 
 /* TEXT STYLES */
@@ -158,3 +201,5 @@
 .font-extralight {
   font-weight: var(--font-extralight);
 }
+
+

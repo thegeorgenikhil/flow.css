@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./alert.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Alert</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Alerts</h1>
+            <p class="docs-primary-content">
+              Provide contextual feedback messages for typical user actions with
+              the handful of available and flexible alert messages.
+
+              <p class="text-base"><em><strong>Note:</strong> By default, the alert component takes the width of the parent element</em></p>
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Simple Alerts</h2>
+            <p class="docs-secondary-content">
+              Simple alerts can used by adding
+              <code>alert bg-[variant]</code> class eg:
+              <code>alert bg-primary</code>
+            </p>
+            <div class="display-container">
+              <div class="alert bg-primary">
+                This is a <strong>primary</strong> alert—check it out!
+              </div>
+              <div class="alert bg-secondary">
+                This is a <strong>secondary</strong> alert—check it out!
+              </div>
+              <div class="alert bg-success">
+                This is a <strong>success</strong> alert—check it out!
+              </div>
+              <div class="alert bg-danger">
+                This is a <strong>danger</strong> alert—check it out!
+              </div>
+              <div class="alert bg-warning">
+                This is a <strong>warning</strong> alert—check it out!
+              </div>
+              <div class="alert bg-info">
+                This is a <strong>info</strong> alert—check it out!
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="alert bg-primary"&gt;This is a &lt;strong&gt;primary&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert bg-secondary"&gt;This is a &lt;strong&gt;secondary&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert bg-success"&gt;This is a &lt;strong&gt;success&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert bg-danger"&gt;This is a &lt;strong&gt;danger&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert bg-warning"&gt;This is a &lt;strong&gt;warning&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert bg-info"&gt;This is a &lt;strong&gt;info&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Outline Alerts</h2>
+            <p class="docs-secondary-content">
+              Alert Outlines can used by adding
+              <code>alert alert-outline-[variant] color-[variant]</code> class eg: <code>alert alert-outline-primary color-primary</code>
+              <code>bg-primary</code>
+            </p>
+            <div class="display-container">
+              <div class="alert alert-outline-primary color-primary">
+                This is a <strong>primary</strong> alert—check it out!
+              </div>
+              <div class="alert alert-outline-secondary color-secondary">
+                This is a <strong>secondary</strong> alert—check it out!
+              </div>
+              <div class="alert alert-outline-success color-success">
+                This is a <strong>success</strong> alert—check it out!
+              </div>
+              <div class="alert alert-outline-danger color-danger">
+                This is a <strong>danger</strong> alert—check it out!
+              </div>
+              <div class="alert alert-outline-warning color-warning">
+                This is a <strong>warning</strong> alert—check it out!
+              </div>
+              <div class="alert alert-outline-info color-info">
+                This is a <strong>info</strong> alert—check it out!
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="alert alert-outline-primary color-primary"&gt;This is a &lt;strong&gt;primary&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert alert-outline-secondary color-secondary"&gt;This is a &lt;strong&gt;secondary&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert alert-outline-success color-success"&gt;This is a &lt;strong&gt;success&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert alert-outline-danger color-danger"&gt;This is a &lt;strong&gt;danger&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert alert-outline-warning color-warning"&gt;This is a &lt;strong&gt;warning&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+        &lt;div class="alert alert-outline-info color-info"&gt;This is a &lt;strong&gt;info&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Alert With Icons</h2>
+            <p class="docs-secondary-content">
+              Icons can be added easily by simple putting them with the alert content 
+            </p>
+            <div class="display-container">
+              <div class="alert bg-primary">
+                <i class="fas fa-check-circle"></i> This is a <strong>primary</strong> alert—check it out!
+              </div>
+              <div class="alert alert-outline-primary color-primary">
+                <i class="fas fa-check-circle"></i> This is a <strong>primary</strong> alert—check it out!
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="alert bg-primary"&gt;
+            [*icon*] This is a &lt;strong&gt;primary&lt;/strong&gt; alert—check it out!
+        &lt;/div&gt;
+        &lt;div class="alert alert-outline-primary color-primary"&gt;
+            [*icon*] This is a &lt;strong&gt;primary&lt;/strong&gt; alert—check it out!
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Dismissible Alerts</h2>
+            <p class="docs-secondary-content">
+              User can dismiss the alerts by clicking on the close icon
+            </p>
+            <div class="display-container">
+              <div class="alert alert-dismissible bg-primary">
+                <div class="alert-content">This is a <strong>primary</strong> alert—check it out!</div>
+                <button class="alert-dismiss"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="alert alert-outline-primary alert-dismissible color-primary">
+                <div class="alert-content">This is a <strong>primary</strong> alert—check it out!</div>
+                <button class="alert-dismiss"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="alert alert-dismissible bg-primary"&gt;
+            &lt;div class="alert-content"&gt;This is a &lt;strong&gt;primary&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+            &lt;button class="alert-dismiss"&gt;&lt;i class="fas fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class="alert alert-outline-primary alert-dismissible color-primary"&gt;
+            &lt;div class="alert-content"&gt;This is a &lt;strong&gt;primary&lt;/strong&gt; alert—check it out!&lt;/div&gt;
+            &lt;button class="alert-dismiss"&gt;&lt;i class="fas fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a
+              href="../Avatar/avatar.html"
+              class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Avatar</a
+            >
+            <a href="../Badge/badge.html" class="footer-link format-link"
+              >Badge <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.relative-container{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    border-radius: var(--border-rounded);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.badge-status{
+    width: 14px;
+    height: 14px;
+    right: 1px;
+    bottom: 4px;
+}
+
+.badge-number{
+    padding: 1px 6px;
+    font-size: var(--text-xs);
+    right: -14px;
+    top: -2px;
+}
+
+.badge-number-sm{
+    font-size: 8px;
+    right: -10px;
+    top: -4px;
+    padding: 1px 5px;
+}
