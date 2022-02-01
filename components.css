@@ -218,10 +218,6 @@
   html {
     font-size: 90%;
   }
-
-  .btn{
-    display: block;
-  }
 }
 @media screen and (max-width: 600px) {
   html {
