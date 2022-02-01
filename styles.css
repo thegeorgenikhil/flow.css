@@ -253,6 +253,7 @@ html {
   background-color: var(--color-markdown);
   color: var(--color-white);
   border-radius: 6px;
+  white-space: nowrap;
 }
 .pl-4 {
   padding-left: 4px;
@@ -308,6 +309,10 @@ html {
     font-size: 3.5rem;
   }
 
+  .main-container{
+    margin-top: 0;
+  }
+
   .side-nav {
     display: none;
   }
@@ -315,6 +320,7 @@ html {
   .small-screen-alert{
     display: block;
   }
+
 }
 
 @media screen and (max-width: 300px) {
