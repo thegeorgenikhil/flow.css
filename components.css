@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+  font-family: var(--font-family-primary);
+}
+
 /* RESPONSIVE IMAGES */
 
 .img-fluid{
@@ -31,6 +36,9 @@
 
   --color-display-container: #f8f9fa;
   --color-markdown:#434750;
+
+  /* FONT FAMILY */
+  --font-family-primary:"Inter", sans-serif;
 
 
   /* FONT SIZE */
