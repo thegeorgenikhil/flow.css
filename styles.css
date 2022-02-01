@@ -245,9 +245,13 @@ html {
   align-items: center;
 }
 
+.wrap{
+  flex-wrap: wrap;
+}
+
 .markdown-code {
   padding: 3px 6px;
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   background-color: var(--color-markdown);
   color: var(--color-white);
   border-radius: 6px;
@@ -316,3 +320,6 @@ html {
     font-size: 65%;
   }
 }
+
+
+
