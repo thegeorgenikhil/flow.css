@@ -1,0 +1,80 @@
+.card {
+    background-color: var(--color-white);
+    border-radius: var(--border-sm);
+    box-shadow: var(--shadow-sm);
+    max-width: 25rem;
+    /* Using px values so that the card maintains the width in all screens */
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-lg {
+  max-width: 30rem;
+}
+
+.card-md {
+  max-width: 20rem;
+}
+
+.card-sm {
+  max-width: 15rem;
+}
+
+.card-horizontal-content {
+  margin: 0 1rem;
+}
+
+.card-horizontal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.card-dismiss {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 80%;
+}
+
+.card-dismiss:hover {
+  opacity: 100%;
+}
+
+.card-dismiss i {
+  cursor: pointer;
+}
+
+.card-overlay-container {
+  position: relative;
+}
+
+.card-overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 1rem;
+}
+
+.card-badge-container{
+    position: relative;
+}
+
+.card-badge{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    padding: 4px 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+@media screen and (max-width: 800px) {
+  .card-horizontal-body {
+    grid-template-columns: none;
+    grid-template-rows: 1fr auto;
+  }
+  .card-horizontal-content {
+    margin: 0;
+  }
+}

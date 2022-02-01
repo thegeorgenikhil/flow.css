@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Button/button.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./card.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Cards</h1>
+            <p class="docs-primary-content">
+              A card is a flexible and extensible content container. It includes
+              options for headers and footers, a wide variety of content,
+              contextual background colors, and powerful display options.
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Basic Card</h2>
+            <p class="docs-secondary-content">
+              A Basic Card contains a heading and description.
+            </p>
+            <div class="display-container flex wrap gap-20">
+              <div class="card card-lg">
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md">Card Large</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-md">
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md">Card Medium</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-sm">
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md">Card Small</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-lg"&gt;
+            &lt;div class="card-body"&gt;
+                &lt;div class="card-header"&gt;
+                    &lt;h2 class="text-md"&gt;Card Large&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;p class="text-sm"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="card card-md"&gt;
+            &lt;div class="card-body"&gt;
+                &lt;div class="card-header"&gt;
+                    &lt;h2 class="text-md"&gt;Card Medium&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;p class="text-sm"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="card card-sm"&gt;
+            &lt;div class="card-header"&gt;
+                &lt;div class="card-body"&gt;
+                    &lt;h2 class="text-md"&gt;Card Small&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;p class="text-sm"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Dismissible Cards</h2>
+            <p class="docs-secondary-content">Cards can be made dismissible.</p>
+            <div class="display-container flex justify-center">
+              <div class="card card-md">
+                <div class="card-body">
+                  <div class="card-dismiss color-gray">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="card-header">
+                    <h2 class="text-md">Card Medium</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-md"&gt;
+            &lt;div class="card-body"&gt;
+                &lt;div class="card-dismiss color-gray"&gt;&lt;i class="fas fa-times"&gt;&lt;/i&gt;&lt;/div&gt;        
+                &lt;div class="card-header"&gt;
+                    &lt;h2 class="text-md"&gt;Card Medium&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;p class="text-sm"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Cards With Image</h2>
+            <p class="docs-secondary-content">
+              Cards can contain image at the top or anywhere you want by
+              rearrange the divs.
+            </p>
+            <div class="display-container flex wrap gap-20 justify-center">
+              <div class="card card-md">
+                <img
+                  class="img card-img"
+                  src="https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+                  alt="img card-img"
+                />
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md color-secondary">Card With Image</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm color-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-md">
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md color-secondary">Card With Image</h2>
+                    <div class="divider-sm"></div>
+                    <img
+                      class="img card-img"
+                      src="https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+                      alt="img card-img"
+                    />
+                    <p class="text-sm color-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-md"&gt;
+            &lt;img class="img card-img" src="img-url" alt="img card-img"/&gt;
+            &lt;div class="card-body"&gt;
+                &lt;div class="card-header"&gt;
+                    &lt;h2 class="text-md color-secondary"&gt;Card With Image&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;p class="text-sm color-secondary"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="card card-md"&gt;
+            &lt;div class="card-body"&gt;
+                &lt;div class="card-header"&gt;
+                    &lt;h2 class="text-md color-secondary"&gt;Card With Image&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;img class="img card-img" src="img-url" alt="img card-img"/&gt;
+                    &lt;p class="text-sm color-secondary"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Cards With Badge</h2>
+            <p class="docs-secondary-content">
+              Badges can be positioned on top of cards by making the card
+              container relative.
+            </p>
+            <div class="display-container flex wrap gap-20 justify-center">
+              <div class="card card-md card-badge-container">
+                <span
+                  class="bg-warning color-white card-badge text-xs font-semibold"
+                  >SALE</span
+                >
+                <img
+                  class="img card-img"
+                  src="https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+                  alt="img card-img"
+                />
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md color-secondary">Card With Image</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm color-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-md card-badge-container"&gt;
+            &lt;span class="bg-warning color-white card-badge text-xs font-semibold"&gt;SALE&lt;/span&gt;
+            &lt;img class="img card-img" src="img-url" alt="img card-img"/&gt;
+            &lt;div class="card-body"&gt;
+              &lt;div class="card-header"&gt;
+                &lt;h2 class="text-md color-secondary"&gt;Card With Image&lt;/h2&gt;
+                &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                &lt;p class="text-sm color-secondary"&gt;Description&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Cards With Text Overlay</h2>
+            <p class="docs-secondary-content">
+              Cards can be made with heading text overlapping with the image.
+            </p>
+            <div class="display-container flex wrap gap-20 justify-center">
+              <div class="card card-md">
+                <div class="card-overlay-container">
+                  <img
+                    class="img card-img"
+                    src="https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+                    alt="img card-img"
+                  />
+                  <div class="card-overlay-text">
+                    <h2 class="color-white">Text Overlay Card</h2>
+                    <p class="color-warning font-bold">$799.00</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <div class="divider-sm"></div>
+                    <p class="text-sm color-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-md"&gt;
+            &lt;div class="card-overlay-container"&gt;
+              &lt;img class="img card-img" src="img-url" alt="img card-img"/&gt;
+              &lt;div class="card-overlay-text"&gt;
+                &lt;h2 class="color-white"&gt;Text Overlay Card&lt;/h2&gt;
+                &lt;p class="color-warning font-bold"&gt;$799.00&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="card-body"&gt;
+              &lt;div class="card-header"&gt;
+                &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                &lt;p class="text-sm color-secondary"&gt;Description&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Cards With Buttons</h2>
+            <p class="docs-secondary-content">
+              CTA Buttons can be added to the footer of the card components
+            </p>
+            <div class="display-container flex wrap gap-20 justify-center">
+              <div class="card card-lg">
+                <img
+                  class="img card-img"
+                  src="https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+                  alt="img card-img"
+                />
+                <div class="card-body">
+                  <div class="card-header">
+                    <h2 class="text-md color-secondary">Card With Buttons</h2>
+                    <div class="divider-sm"></div>
+                    <p class="text-sm color-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Repellat cum at sapiente officiis repellendus nostrum et
+                      sunt libero similique minima! Ad quas quasi error saepe
+                      deleniti alias nulla maiores sunt.
+                    </p>
+                  </div>
+                  <div class="card-actions">
+                    <button type="button" class="btn bg-primary">
+                      Buy Now
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline btn-outline-secondary"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-md"&gt;
+            &lt;img class="img card-img" src="img-url" alt="img card-img"/&gt;
+            &lt;div class="card-body"&gt;
+                &lt;div class="card-header"&gt;
+                    &lt;h2 class="text-md color-secondary"&gt;Card With Image&lt;/h2&gt;
+                    &lt;div class="divider-sm"&gt;&lt;/div&gt;
+                    &lt;p class="text-sm color-secondary"&gt;Description&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Horizontal Cards</h2>
+            <p class="docs-secondary-content">
+              You can align the card horizontally, but on smaller devices it
+              rearrange vertically for better viewing experience.
+            </p>
+            <div class="display-container">
+              <div class="card card-lg">
+                <div class="card-horizontal-body">
+                  <img
+                    class="img card-img"
+                    src="https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+                    alt="img card-img"
+                  />
+                  <div class="card-horizontal-content">
+                    <h2 class="text-md">Horizontal Card</h2>
+                    <p class="color-gray">$799.99</p>
+                    <div class="card-actions">
+                      <button
+                        type="button"
+                        class="btn btn-block bg-primary text-xs"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="card card-lg"&gt;
+            &lt;div class="card-horizontal-body"&gt;
+              &lt;img class="img card-img" src="img url" alt="img card-img"/&gt;
+              &lt;div class="card-horizontal-content"&gt;
+                &lt;h2 class="text-md"&gt;Horizontal Card&lt;/h2&gt;
+                &lt;p class="color-gray"&gt;$799.99&lt;/p&gt;
+                &lt;div class="card-actions"&gt;
+                  &lt;button type="button" class="btn btn-block bg-primary text-xs"&gt;Buy Now&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../Button/button.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Button</a
+            >
+            <a href="../Image/image.html" class="footer-link format-link"
+              >Image <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

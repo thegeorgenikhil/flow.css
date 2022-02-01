@@ -1,0 +1,146 @@
+.btn {
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: var(--font-regular);
+  cursor: pointer;
+  border-radius: var(--border-xs);
+  margin: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  opacity: 85%;
+}
+
+.btn:active {
+  opacity: 100%;
+}
+
+.btn-disabled {
+  background-color: var(--color-gray);
+  opacity: 65%;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  opacity: 65%;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-ghost {
+  background-color: transparent;
+}
+.btn-link {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.btn-link:hover {
+  text-decoration: underline var(--color-primary);
+  opacity: 100%;
+}
+
+.btn-floating{
+  border-radius: var(--border-rounded);
+  padding: 10px 12px;
+}
+
+/* OUTLINE BUTTONS */
+
+.btn-outline {
+  background-color: transparent;
+  padding: calc(0.75rem - 2px) 1.5rem; 
+  /* To make the contained button and outline buttons the same size
+     The border 2px outline was making it larger than the other
+  */
+}
+
+.btn-outline-primary {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-outline-secondary {
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+.btn-outline-success {
+  color: var(--color-success);
+  border: 2px solid var(--color-success);
+}
+
+.btn-outline-danger {
+  color: var(--color-danger);
+  border: 2px solid var(--color-danger);
+}
+
+.btn-outline-warning {
+  color: var(--color-warning);
+  border: 2px solid var(--color-warning);
+}
+
+.btn-outline-info {
+  color: var(--color-info);
+  border: 2px solid var(--color-info);
+}
+
+.btn-outline-dark {
+  color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--color-warning);
+  color: var(--color-white);
+}
+
+.btn-outline-info:hover {
+  background-color: var(--color-info);
+  color: var(--color-white);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 600px) {
+  .btn{
+    display: block;
+    width: 100%;
+  }
+
+  .btn-floating{
+    display: inline-block;
+    width: auto;
+  }
+}

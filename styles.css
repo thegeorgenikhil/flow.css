@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("./components.css");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 html {
   font-size: 100%;
   font-family: "Inter", sans-serif;
@@ -231,6 +225,10 @@ html {
   margin: 1.5rem 0;
 }
 
+.small-screen-alert {
+  display: none;
+}
+
 /* UTILITY CLASSES */
 
 .flex {
@@ -245,9 +243,13 @@ html {
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .markdown-code {
   padding: 3px 6px;
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   background-color: var(--color-markdown);
   color: var(--color-white);
   border-radius: 6px;
@@ -278,7 +280,7 @@ html {
   margin: 0.5rem 0;
 }
 
-.gap-20{
+.gap-20 {
   gap: 20px;
 }
 
@@ -308,6 +310,10 @@ html {
 
   .side-nav {
     display: none;
+  }
+
+  .small-screen-alert{
+    display: block;
   }
 }
 

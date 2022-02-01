@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./button.css" />
+    <link rel="stylesheet" href="../Alert/alert.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Button</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Buttons</h1>
+            <p class="docs-primary-content">
+              Use <strong class="color-primary">flow.css</strong> custom button
+              styles for actions in forms, dialogs, and more with support for
+              multiple sizes, states, and more.
+            </p>
+            <div class="alert alert-outline-warning color-danger text-sm small-screen-alert"><i class="fas fa-exclamation-triangle"></i> You are viewing this on a smaller screen(less than 600px) so all the button styles are by default, converted to <strong>display : block</strong></div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Contained Buttons</h2>
+            <p class="docs-secondary-content">
+              Contained buttons are high-emphasis, distinguished by their use of
+              elevation and fill. They contain actions that are primary to your
+              app.
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn bg-[variant] color-[variant](OPTIONAL)</em></code
+              >
+            </p>
+            <div class="display-container flex wrap">
+              <button type="button" class="btn bg-primary">Primary</button>
+              <button type="button" class="btn bg-secondary">Secondary</button>
+              <button type="button" class="btn bg-success">Success</button>
+              <button type="button" class="btn bg-danger">Danger</button>
+              <button type="button" class="btn bg-warning color-dark">
+                Warning
+              </button>
+              <button type="button" class="btn bg-info">Info</button>
+              <button type="button" class="btn bg-dark">Dark</button>
+              <button type="button" class="btn btn-disabled" disabled>
+                Disabled
+              </button>
+              <button type="button" class="btn btn-ghost color-dark">
+                Ghost
+              </button>
+              <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;button type="button" class="btn bg-primary"&gt;Primary&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-secondary"&gt;Secondary&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-success"&gt;Success&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-danger"&gt;Danger&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-warning color-dark"&gt;Warning&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-info"&gt;Info&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-dark"&gt;Dark&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-disabled" disabled&gt;Disabled&lt;/button&gt;
+
+        &lt;button type="button" class="btn bg-white color-dark"&gt;Ghost&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Outline Buttons</h2>
+            <p class="docs-secondary-content">
+              In need of a button, but not the hefty background colors they
+              bring? Replace the default modifier classes with the btn-outline-*
+              ones to remove all background images and colors on any button.
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn btn-outline-[variant]</em></code
+              >
+            </p>
+            <div class="display-container flex wrap">
+              <button type="button" class="btn btn-outline btn-outline-primary">
+                Primary
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline btn-outline-secondary"
+              >
+                Secondary
+              </button>
+              <button type="button" class="btn btn-outline btn-outline-success">
+                Success
+              </button>
+              <button type="button" class="btn btn-outline btn-outline-danger">
+                Danger
+              </button>
+              <button type="button" class="btn btn-outline btn-outline-warning">
+                Warning
+              </button>
+              <button type="button" class="btn btn-outline btn-outline-info">
+                Info
+              </button>
+              <button type="button" class="btn btn-outline btn-outline-dark">
+                Dark
+              </button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;button type="button" class="btn btn-outline btn-outline-primary"&gt;Primary&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-outline btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-outline btn-outline-success"&gt;Success&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-outline btn-outline-danger"&gt;Danger&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-outline btn-outline-warning"&gt;Warning&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-outline btn-outline-info"&gt;Info&lt;/button&gt;
+
+        &lt;button type="button" class="btn btn-outline btn-outline-dark"&gt;Dark&lt;/button&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Button Sizes</h2>
+            <p class="docs-secondary-content">
+              Button Sizes can be changed by using the text-size utility
+              classes.
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn bg-[variant] text-[variant]</em></code
+              >
+            </p>
+            <div class="display-container">
+              <button type="button" class="btn bg-primary text-lg">
+                Primary
+              </button>
+              <button type="button" class="btn bg-primary text-md">
+                Primary
+              </button>
+              <button type="button" class="btn bg-primary text-xs">
+                Primary
+              </button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;button type="button" class="btn bg-primary text-lg"&gt;Primary&lt;/button&gt;
+        &lt;button type="button" class="btn bg-primary text-md"&gt;Primary&lt;/button&gt;
+        &lt;button type="button" class="btn bg-primary text-xs"&gt;Primary&lt;/button&gt;        
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Block-level Buttons</h2>
+            <p class="docs-secondary-content">
+              Create block level buttons—those that span the full width of a
+              parent
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn btn-block bg-[variant]</em></code
+              >
+            </p>
+            <div class="display-container">
+              <button type="button" class="btn btn-block bg-primary">
+                Primary Block Button
+              </button>
+              <button type="button" class="btn btn-block bg-secondary">
+                Secondary Block Button
+              </button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;button type="button" class="btn btn-block bg-primary"&gt;Primary Block Button&lt;/button&gt;
+        &lt;button type="button" class="btn btn-block bg-secondary"&gt;Secondary Block Button&lt;/button&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Buttons with Icon</h2>
+            <p class="docs-secondary-content">
+              Icon Buttons can be created, by using a SVG as a child to parent
+              button.
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn bg-[variant] color-[variant](OPTIONAL)</em></code
+              >
+            </p>
+            <div class="display-container">
+              <button type="button" class="btn btn-block bg-primary">
+                <i class="fas fa-upload"></i> Upload
+              </button>
+              <button type="button" class="btn bg-primary">
+                <i class="fas fa-upload"></i> Upload
+              </button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;button type="button" class="btn btn-block bg-primary"&gt;
+          &lt;i class="fas fa-upload"&gt;&lt;/i&gt; Upload
+        &lt;/button&gt;
+        &lt;button type="button" class="btn bg-primary"&gt;
+          &lt;i class="fas fa-upload"&gt;&lt;/i&gt; Upload
+        &lt;/button&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Floating Action Buttons</h2>
+            <p class="docs-secondary-content">
+              A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. 
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn btn-floating bg-[variant] color-[variant](OPTIONAL)</em></code
+              >
+            </p>
+            <div class="display-container flex wrap justify-center">
+              <button type="button" class="btn btn-floating bg-primary">
+                <i class="fas fa-upload"></i>
+              </button>
+              <button type="button" class="btn btn-floating bg-danger">
+                <i class="fas fa-save"></i>
+              <button type="button" class="btn btn-floating bg-success">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+    &lt;button type="button" class="btn btn-floating bg-primary"&gt;
+      &lt;i class="fas fa-upload"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="btn btn-floating bg-danger"&gt;
+      &lt;i class="fas fa-save"&gt;&lt;/i&gt;
+    &lt;button type="button" class="btn btn-floating bg-success"&gt;
+      &lt;i class="fas fa-search"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../Badge/badge.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Badge</a
+            >
+            <a href="../Card/card.html" class="footer-link format-link"
+              >Card <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
