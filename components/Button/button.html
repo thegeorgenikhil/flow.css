@@ -144,7 +144,9 @@
               <button type="button" class="btn btn-disabled" disabled>
                 Disabled
               </button>
-              <button type="button" class="btn color-dark">Ghost</button>
+              <button type="button" class="btn btn-ghost color-dark">
+                Ghost
+              </button>
               <button type="button" class="btn btn-link">Link</button>
             </div>
             <div class="code-container">
@@ -176,9 +178,8 @@
             <h2 class="docs-sub-heading">Outline Buttons</h2>
             <p class="docs-secondary-content">
               In need of a button, but not the hefty background colors they
-              bring? Replace the default modifier classes with the
-              .btn-outline-* ones to remove all background images and colors on
-              any button.
+              bring? Replace the default modifier classes with the btn-outline-*
+              ones to remove all background images and colors on any button.
             </p>
             <p class="docs-secondary-content">
               <code class="markdown-code"
@@ -186,40 +187,47 @@
               >
             </p>
             <div class="display-container flex wrap">
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-outline btn-outline-primary">
                 Primary
               </button>
-              <button type="button" class="btn btn-outline-secondary">
+              <button
+                type="button"
+                class="btn btn-outline btn-outline-secondary"
+              >
                 Secondary
               </button>
-              <button type="button" class="btn btn-outline-success">
+              <button type="button" class="btn btn-outline btn-outline-success">
                 Success
               </button>
-              <button type="button" class="btn btn-outline-danger">
+              <button type="button" class="btn btn-outline btn-outline-danger">
                 Danger
               </button>
-              <button type="button" class="btn btn-outline-warning">
+              <button type="button" class="btn btn-outline btn-outline-warning">
                 Warning
               </button>
-              <button type="button" class="btn btn-outline-info">Info</button>
-              <button type="button" class="btn btn-outline-dark">Dark</button>
+              <button type="button" class="btn btn-outline btn-outline-info">
+                Info
+              </button>
+              <button type="button" class="btn btn-outline btn-outline-dark">
+                Dark
+              </button>
             </div>
             <div class="code-container">
               <pre>
                       <code class="language-html">
-        &lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-primary"&gt;Primary&lt;/button&gt;
 
-        &lt;button type="button" class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-secondary"&gt;Secondary&lt;/button&gt;
 
-        &lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-success"&gt;Success&lt;/button&gt;
 
-        &lt;button type="button" class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-danger"&gt;Danger&lt;/button&gt;
 
-        &lt;button type="button" class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-warning"&gt;Warning&lt;/button&gt;
 
-        &lt;button type="button" class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-info"&gt;Info&lt;/button&gt;
 
-        &lt;button type="button" class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline btn-outline-dark"&gt;Dark&lt;/button&gt;
                       </code>
                   </pre>
             </div>
@@ -304,11 +312,45 @@
               <pre>
                       <code class="language-html">
         &lt;button type="button" class="btn btn-block bg-primary"&gt;
-          [icon] Upload
+          &lt;i class="fas fa-upload"&gt;&lt;/i&gt; Upload
         &lt;/button&gt;
         &lt;button type="button" class="btn bg-primary"&gt;
-          [icon] Upload
+          &lt;i class="fas fa-upload"&gt;&lt;/i&gt; Upload
         &lt;/button&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Floating Action Buttons</h2>
+            <p class="docs-secondary-content">
+              A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. 
+            </p>
+            <p class="docs-secondary-content">
+              <code class="markdown-code"
+                ><em>btn btn-floating bg-[variant] color-[variant](OPTIONAL)</em></code
+              >
+            </p>
+            <div class="display-container flex wrap justify-center">
+              <button type="button" class="btn btn-floating bg-primary">
+                <i class="fas fa-upload"></i>
+              </button>
+              <button type="button" class="btn btn-floating bg-danger">
+                <i class="fas fa-save"></i>
+              <button type="button" class="btn btn-floating bg-success">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+    &lt;button type="button" class="btn btn-floating bg-primary"&gt;
+      &lt;i class="fas fa-upload"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="btn btn-floating bg-danger"&gt;
+      &lt;i class="fas fa-save"&gt;&lt;/i&gt;
+    &lt;button type="button" class="btn btn-floating bg-success"&gt;
+      &lt;i class="fas fa-search"&gt;&lt;/i&gt;
+    &lt;/button&gt;
                       </code>
                   </pre>
             </div>

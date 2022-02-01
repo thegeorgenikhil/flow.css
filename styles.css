@@ -300,6 +300,12 @@ html {
   .header {
     margin-top: 3rem;
   }
+
+  .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 600px) {
   html {

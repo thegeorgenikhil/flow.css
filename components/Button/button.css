@@ -1,6 +1,5 @@
 .btn {
   border: none;
-  background-color: transparent;
   color: white;
   padding: 0.75rem 1.5rem;
   font-family: "Inter", sans-serif;
@@ -9,7 +8,7 @@
   cursor: pointer;
   border-radius: var(--border-xs);
   margin: 5px;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
@@ -23,35 +22,45 @@
 .btn-disabled {
   background-color: var(--color-gray);
   opacity: 65%;
-  cursor:not-allowed
+  cursor: not-allowed;
 }
 
 .btn-disabled:hover {
   opacity: 65%;
 }
 
-.btn-block{
-    display: block;
-    width: 100%;
-    text-align: center;
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
-.btn-link{
+.btn-ghost {
+  background-color: transparent;
+}
+.btn-link {
   color: var(--color-primary);
 }
 
-.btn-link:hover{
+.btn-link:hover {
   text-decoration: underline var(--color-primary);
   opacity: 100%;
 }
 
-.btn-icon{
-  display: flex;
-  justify-content: center;
-  align-items:  flex-end;
+.btn-floating{
+  border-radius: var(--border-rounded);
+  padding: 10px 12px;
 }
 
 /* OUTLINE BUTTONS */
+
+.btn-outline {
+  background-color: transparent;
+  padding: calc(0.75rem - 2px) 1.5rem; 
+  /* To make the contained button and outline buttons the same size
+     The border 2px outline was making it larger than the other
+  */
+}
 
 .btn-outline-primary {
   color: var(--color-primary);

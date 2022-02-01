@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.img{
+  max-width: 100%;
+}
+
 /* CSS VARIABLES */
 
 :root {
@@ -202,4 +206,31 @@
   font-weight: var(--font-extralight);
 }
 
+.divider-sm {
+  width: 100%;
+  height: 1px;
+  background-color: #dadadaf3;
+  margin: 0.5rem 0;
+}
 
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 90%;
+  }
+
+  .btn{
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 65%;
+  }
+}
