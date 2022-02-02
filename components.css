@@ -6,8 +6,16 @@
   box-sizing: border-box;
 }
 
-.img{
+html {
+  font-size: 100%;
+  font-family: var(--font-family-primary);
+}
+
+/* RESPONSIVE IMAGES */
+
+.img-fluid{
   max-width: 100%;
+  height: auto;
 }
 
 /* CSS VARIABLES */
@@ -24,8 +32,14 @@
   --color-gray: #949494;
   --color-white: #ffffff;
 
+  --color-form-gray:#aaa9a966;
+
   --color-display-container: #f8f9fa;
-  --color-markdown:#343942;
+  --color-markdown:#434750;
+
+  /* FONT FAMILY */
+  --font-family-primary:"Inter", sans-serif;
+
 
   /* FONT SIZE */
   --text-xl: 3rem;
@@ -34,7 +48,7 @@
   --text-regular: 1.25rem;
   --text-base: 1.1rem;
   --text-sm: 1rem;
-  --text-xs: 12px;
+  --text-xs: 0.75rem;
 
   --text-btn:1.2rem;
 
@@ -204,6 +218,28 @@
 
 .font-extralight {
   font-weight: var(--font-extralight);
+}
+
+/* BORDER RADIUS STYLES */
+
+.rounded-xs{
+  border-radius: var(--border-xs);
+}
+
+.rounded-sm{
+  border-radius: var(--border-sm);
+}
+
+.rounded-md{
+  border-radius: var(--border-md);
+}
+
+.rounded-lg{
+  border-radius: var(--border-lg);
+}
+
+.rounded-full{
+  border-radius: var(--border-rounded);
 }
 
 .divider-sm {

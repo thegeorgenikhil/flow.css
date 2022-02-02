@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Input</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Input</h1>
+            <p class="docs-primary-content">
+              Easily create forms by using our pre-made input components, along
+              with validation and error styles
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Input</h2>
+            <p class="docs-secondary-content">
+              Input components takes up the width of the entire parent
+              component.Label and input component is enclosed in the
+              <code class="mardown-code">.input-group</code>
+            </p>
+            <div class="display-container">
+              <div class="input-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  placeholder="Enter Username:"
+                  name="username"
+                  class="input"
+                />
+              </div>
+              <div class="input-group">
+                <label for="ph-number">Phone Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter Phone Number: "
+                  name="ph-number"
+                  class="input"
+                />
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email: "
+                  name="email"
+                  class="input"
+                />
+              </div>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter Password: "
+                  name="password"
+                  class="input"
+                />
+              </div>
+              <div class="input-group">
+                <label for="password">Text Area</label>
+                <textarea name="textarea" placeholder="Enter Text: " id="" class="input" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="input-group"&gt;
+            &lt;label for="username"&gt;Username&lt;/label&gt;
+            &lt;input type="text" class="input" placeholder="Enter Username:" name="username"/&gt;
+          &lt;/div&gt;
+
+          &lt;div class="input-group"&gt;
+            &lt;label for="ph-number"&gt;Phone Number&lt;/label&gt;
+            &lt;input type="number" class="input" placeholder="Enter Phone Number: " name="ph-number"/&gt;
+          &lt;/div&gt;
+
+          &lt;div class="input-group"&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" class="input" placeholder="Enter Email: " name="email"/&gt;
+          &lt;/div&gt;
+          
+          &lt;div class="input-group"&gt;
+            &lt;label for="password"&gt;Password&lt;/label&gt;
+            &lt;input type="password" class="input" placeholder="Enter Password: " name="password"/&gt;
+        &lt;/div&gt;
+
+        &lt;div class="input-group"&gt;
+            &lt;label for="password"&gt;Text Area&lt;/label&gt;
+            &lt;textarea name="textarea" placeholder="Enter Text: " id="" class="input" cols="30" rows="10"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Disabled Input</h2>
+            <p class="docs-secondary-content">
+              Disable an input component by using
+              <code class="markdown-code">.input-disabled</code>
+            </p>
+            <div class="display-container">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email: "
+                  name="email"
+                  value="jim@outlook.com"
+                  class="input input-disabled"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="input-group"&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;            
+            &lt;input type="email" placeholder="Email" name="email" value="value" class="input input-disabled" disabled /&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Input Validations</h2>
+            <p class="docs-secondary-content">
+              Validate input from the user by changing the border color using
+              the <code class="markdown-code">.is-error</code> and
+              <code class="markdown-code">.is-success</code> class.
+            </p>
+            <div class="display-container">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email: "
+                  name="email"
+                  class="input is-error"
+                />
+                <p class="validation-message color-danger">
+                  Not a valid email format!
+                </p>
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email: "
+                  name="email"
+                  class="input is-success"
+                />
+                <p class="validation-message color-success">Good to go!</p>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="input-group"&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" placeholder="Enter Email: " name="email" class="input is-error" /&gt;
+            &lt;p class="validation-message color-danger"&gt;Not a valid email format!&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" placeholder="Enter Email: " name="email" class="input is-success"/&gt;
+            &lt;p class="validation-message color-success"&gt;Good to go!&lt;/p&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../Image/image.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Image</a
+            >
+            <a href="../List/list.html" class="footer-link format-link"
+              >List <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
