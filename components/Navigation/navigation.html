@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Button/button.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./navigation.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a
+              href="../../get-started/installation/installation.html"
+              class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Navigation</h1>
+            <p class="docs-primary-content">
+              Documentation and examples for
+              <strong class="color-primary">flow.css</strong> powerful,
+              responsive navigation header, the navbar. Includes support for
+              branding, navigation, and more, including support for our collapse
+              plugin.
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Simple Navbar</h2>
+            <p class="docs-secondary-content">
+              A basic navbar with a brand logo and links
+            </p>
+            <div class="display-container">
+              <nav class="simple-navbar-container bg-secondary color-white">
+                <div class="navbar-brand">Navbar</div>
+                <ul class="navbar-group color-white">
+                  <li class="navbar-item">
+                    <a href="/" class="navbar-link">Features</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="/" class="navbar-link">Pricing</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="/" class="navbar-link">Discord</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+      &lt;nav class="navbar-container bg-secondary color-white"&gt;
+        &lt;div class="navbar-brand"&gt;Navbar&lt;/div&gt;
+        &lt;ul class="navbar-group color-white"&gt;
+          &lt;li class="navbar-item"&gt;&lt;a href="" class="navbar-link"&gt;Features&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="navbar-item"&gt;&lt;a href="" class="navbar-link"&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="navbar-item"&gt;&lt;a href="" class="navbar-link"&gt;Discord&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Fully-responsive Navbar</h2>
+            <p class="docs-secondary-content">
+              A basic navbar with a brand logo and links
+            </p>
+            <div class="display-container">
+              <nav class="navbar-container bg-secondary color-white">
+                <div class="navbar-main">
+                  <h1 class="navbar-brand">Navbar</h1>
+                  <ul class="navbar-group color-white">
+                    <li class="navbar-hamburger" id="btn-collapse">
+                      <i class="fas fa-bars"></i>
+                    </li>
+                    <li class="navbar-main">
+                      <ul class="navbar-main-group text-base">
+                        <li class="navbar-item">
+                          <a href="#" class="navbar-link">Features</a>
+                        </li>
+                        <li class="navbar-item">
+                          <a href="#" class="navbar-link">Pricing</a>
+                        </li>
+                        <li class="navbar-item">
+                          <a href="#" class="navbar-link"
+                            ><button class="btn bg-primary text-base">Signup</button></a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <ul
+                  class="navbar-collapsible-group color-white hidden"
+                  id="collapsible-group"
+                >
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Features</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Pricing</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link"
+                      ><button class="btn bg-primary text-base">Signup</button></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;nav class="navbar-container bg-secondary color-white"&gt;
+          &lt;div class="navbar-main"&gt;
+            &lt;h1 class="navbar-brand"&gt;Navbar&lt;/h1&gt;
+            &lt;ul class="navbar-group color-white"&gt;
+              &lt;li class="navbar-hamburger" id="btn-collapse"&gt;
+                &lt;i class="fas fa-bars"&gt;&lt;/i&gt;
+              &lt;/li&gt;
+              &lt;li class="navbar-main"&gt;
+                &lt;ul class="navbar-main-group text-sm"&gt;
+                  &lt;li class="navbar-item"&gt;
+                    &lt;a href="/" class="navbar-link"&gt;Features&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="navbar-item"&gt;Pricing&lt;/li&gt;
+                  &lt;li class="navbar-item"&gt;
+                    &lt;a href="/" class="navbar-link"&gt;&lt;button class="btn bg-primary text-base"&gt;Signup&lt;/button&gt;&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;ul class="navbar-collapsible-group color-white hidden" id="collapsible-group"&gt;
+            &lt;li class="navbar-item"&gt;
+              &lt;a href="/" class="navbar-link"&gt;Features&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="navbar-item"&gt;Pricing&lt;/li&gt;
+            &lt;li class="navbar-item"&gt;
+              &lt;a href="/" class="navbar-link"
+                &gt;&lt;button class="btn bg-primary text-base"&gt;Signup&lt;/button&gt;&lt;/a
+              &gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../Modal/modal.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Modal</a
+            >
+            <a href="../Badge/badge.html" class="footer-link format-link"
+              >Badge <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="./navbar.js"></script>
+  </body>
+</html>
