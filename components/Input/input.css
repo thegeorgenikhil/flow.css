@@ -48,7 +48,6 @@
 }
 
 .input-disabled {
-  /* cursor: not-allowed; */
   background-color: var(--color-form-gray);
   color: var(--color-gray);
 }
