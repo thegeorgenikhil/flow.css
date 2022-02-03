@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Button/button.css">
+    <link rel="stylesheet" href="../Avatar/avatar.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./list.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - List</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../../get-started/installation/installation.html" class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">List</h1>
+            <p class="docs-primary-content">
+              Lists are continuous, vertical indexes of text or images. They are
+              composed of items containing primary and supplemental actions,
+              which are represented by icons and text.
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Basic Lists</h2>
+            <p class="docs-secondary-content">
+              <em
+                >By default, the list container takes the full width of the
+                parent element</em
+              >
+            </p>
+            <div class="display-container">
+              <ul class="list-group bg-white">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+              <div class="divider"></div>
+              <ul class="list-group bg-primary color-white">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;ul class="list-group bg-white"&gt;
+            &lt;li&gt;Home&lt;/li&gt;
+            &lt;li&gt;Products&lt;/li&gt;
+            &lt;li&gt;Blog&lt;/li&gt;
+            &lt;li&gt;Contact&lt;/li&gt;
+        &lt;/ul&gt;
+        
+        &lt;ul class="list-group bg-primary color-white"&gt;
+            &lt;li&gt;Home&lt;/li&gt;
+            &lt;li&gt;Products&lt;/li&gt;
+            &lt;li&gt;Blog&lt;/li&gt;
+            &lt;li&gt;Contact&lt;/li&gt;
+        &lt;/ul&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Stacked List</h2>
+            <p class="docs-secondary-content">
+              Stacked list can be often used to make stacked notifications or user profiles.
+            </p>
+            <div class="display-container">
+                <ul class="list-group">
+                    <li class="bg-white">
+                        <div class="flex align-center justify-between">
+                                <div class="flex align-center">
+                                    <img src="https://pbs.twimg.com/profile_images/1336281436685541376/fRSl8uJP_400x400.jpg" alt="avatar" class="avatar avatar-md"/>
+                                    <div class="pl-4">
+                                        <p class="font-bold">Dan Abramov</p>
+                                        <p class="text-xs color-gray">300k followers</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn bg-primary text-sm">Follow <i class="fas fa-plus pl-4"></i></button>
+                                </div>
+                        </div>
+                        <div class="divider-sm"></div>
+                    </li>
+                    <li class="bg-white">
+                        <div class="flex align-center justify-between">
+                                <div class="flex align-center">
+                                    <img src="https://pbs.twimg.com/profile_images/557940120184041473/bFyXy8Pu_400x400.jpeg" alt="avatar" class="avatar avatar-md"/>
+                                    <div class="pl-4">
+                                        <p class="font-bold">Rich Harris</p>
+                                        <p class="text-xs color-gray">122k followers</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn bg-primary text-sm">Follow <i class="fas fa-plus pl-4"></i></button>
+                                </div>
+                        </div>
+                        <div class="divider-sm"></div>
+                    </li>
+                </ul>
+            </div>    
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;ul class="stacked-lists list-group"&gt;
+            &lt;li class="bg-white"&gt;
+                &lt;div class="flex align-center justify-between"&gt;
+                        &lt;div class="flex align-center"&gt;
+                            &lt;img src="img-url" alt="avatar" class="avatar avatar-md"/&gt;
+                            &lt;div class="pl-4"&gt;
+                                &lt;p class="font-bold"&gt;Dan Abramov&lt;/p&gt;
+                                &lt;p class="text-xs color-gray"&gt;300k followers&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;button class="btn bg-primary text-sm"&gt;Follow &lt;i class="fas fa-plus pl-4"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="divider-sm"&gt;&lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class="bg-white"&gt;
+                &lt;div class="flex align-center justify-between"&gt;
+                        &lt;div class="flex align-center"&gt;
+                            &lt;img src="img-url" alt="avatar" class="avatar avatar-md"/&gt;
+                            &lt;div class="pl-4"&gt;
+                                &lt;p class="font-bold"&gt;Rich Harris&lt;/p&gt;
+                                &lt;p class="text-xs color-gray"&gt;122k followers&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;button class="btn bg-primary text-sm"&gt;Follow &lt;i class="fas fa-plus pl-4"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="divider-sm"&gt;&lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../Input/input.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Input</a
+            >
+            <a href="../Modal/modal.html" class="footer-link format-link"
+              >Modal <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
