@@ -127,7 +127,7 @@
             <div class="divider"></div>
             <h2 class="docs-sub-heading">Simple Navbar</h2>
             <p class="docs-secondary-content">
-              A basic navbar with a brand logo and links
+              A basic navbar with a brand logo and links.
             </p>
             <div class="display-container">
               <nav class="simple-navbar-container bg-secondary color-white">
@@ -162,7 +162,7 @@
             <div class="divider"></div>
             <h2 class="docs-sub-heading">Fully-responsive Navbar</h2>
             <p class="docs-secondary-content">
-              A basic navbar with a brand logo and links
+              A responsive horizontal navbar that can support  brand logo,links, buttons, and dropdowns
             </p>
             <div class="display-container">
               <nav class="navbar-container bg-secondary color-white">
@@ -207,6 +207,7 @@
                 </ul>
               </nav>
             </div>
+            <p class="text-md font-semibold">CSS</p>
             <div class="code-container">
               <pre>
                       <code class="language-html">
@@ -242,6 +243,24 @@
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/nav&gt;
+                      </code>
+                  </pre>
+            </div>
+            <p class="text-md font-semibold">Custom JS</p>
+            <p class="docs-secondary-content">Place the following script near the end of your pages, right before the closing <code class="markdown-code">&lt;/body&gt;</code> tag, to enable them.</p>
+            <div class="code-container">
+              <pre>
+                      <code class="language-js">
+        // Add this script  
+        &lt;script&gt;
+          const btnCollapse = document.getElementById("btn-collapse");
+          const collapseGroup = document.getElementById("collapsible-group");
+
+          btnCollapse.addEventListener("click",() => {
+              const stateOfNav = collapseGroup.style.display || "none";
+              collapseGroup.style.display = currentStateOfNav = stateOfNav === "none" ? "block" : "none"
+          })
+        &lt;/script&gt;
                       </code>
                   </pre>
             </div>

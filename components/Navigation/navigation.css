@@ -54,6 +54,10 @@
   color: inherit;
 }
 
+.navbar-link:hover{
+  opacity: 90%;
+}
+
 .navbar-hamburger {
   display: none;
   font-size: var(--text-md);

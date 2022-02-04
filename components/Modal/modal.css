@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 28rem;
+    max-width: 32rem;
     box-shadow: var(--shadow-sm);
     padding: 1rem;
     border-radius: var(--border-sm);
@@ -51,5 +51,12 @@
 
 .modal-hidden{
     display: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .modal{
+        width: 80%;
+    }
 }
 
