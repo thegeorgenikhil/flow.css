@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="../Button/button.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a
+              href="../../get-started/installation/installation.html"
+              class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Modal</h1>
+            <p class="docs-primary-content">
+              Use <strong class="color-primary">flow.css's</strong> JavaScript
+              modal plugin to add dialogs to your site for lightboxes, user
+              notifications, or completely custom content.
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Basic Modal with Buttons</h2>
+            <p class="docs-secondary-content">
+              Below is a static modal example (meaning its position and display
+              have been overridden). Included are the modal header, modal body
+              (required for padding), and modal footer (optional). We ask that
+              you include modal headers with dismiss actions whenever possible,
+              or provide another explicit dismiss action.
+            </p>
+            <div class="display-container flex justify-center">
+              <button id="modal-open" class="btn bg-primary">Open Modal</button>
+            </div>
+            <div id="modal-container" class="modal-hidden modal-container">
+              <div id="modal" class="modal bg-white">
+                <div class="modal-header">
+                  <p>Are you sure?</p>
+                  <span class="modal-dismiss" id="modal-dismiss"
+                    ><i class="fas fa-times"></i
+                  ></span>
+                </div>
+                <div class="divider-sm"></div>
+                <div class="modal-body">
+                  You are going to delete this repository. This action cannot be
+                  reversed.
+                </div>
+                <div class="divider-sm"></div>
+                <div class="modal-footer">
+                  <button class="btn bg-gray">Cancel</button>
+                  <button class="btn bg-danger">Delete</button>
+                </div>
+              </div>
+              <div id="modal-blur" class="modal-blur"></div>
+            </div>
+            <p class="text-md font-semibold">CSS</p>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div id="modal-container" class="modal-hidden"&gt;
+            &lt;div id="modal" class="modal bg-white"&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;p&gt;Are you sure?&lt;/p&gt;
+                &lt;span class="modal-dismiss" id="modal-dismiss"&gt;&lt;i class="fas fa-times"&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="divider-sm"&gt;&lt;/div&gt;
+              &lt;div class="modal-body"&gt;
+                You are going to delete this repository. This action cannot be reversed.
+              &lt;/div&gt;
+              &lt;div class="divider-sm"&gt;&lt;/div&gt;
+              &lt;div class="modal-footer"&gt;
+                &lt;button class="btn bg-gray"&gt;Cancel&lt;/button&gt;
+                &lt;button class="btn bg-danger"&gt;Delete&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="modal-blur" class="modal-blur"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <p class="text-md font-semibold">Custom JS</p>
+            <p class="docs-secondary-content">Place the following script near the end of your pages, right before the closing <code class="markdown-code">&lt;/body&gt;</code> tag, to enable them.</p>
+            <div class="code-container">
+              <pre>
+                      <code class="language-js">
+        // Add this script  
+        &lt;script&gt;
+            const modalOpen = document.getElementById("modal-open");
+            const modalContainer = document.getElementById("modal-container");
+            const modalBlur = document.getElementById("modal-blur");
+            const modalDismiss = document.getElementById("modal-dismiss");
+                        
+            modalOpen.addEventListener("click",() => {
+                modalContainer.classList.remove("modal-hidden")
+            })
+        
+            modalDismiss.addEventListener("click",() => {
+                modalContainer.classList.add("modal-hidden")
+            })
+        
+            modalBlur.addEventListener("click",() => {
+                modalContainer.classList.add("modal-hidden")
+            })
+        &lt;/script&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../List/list.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> List</a
+            >
+            <a href="../Navigation/navigation.html" class="footer-link format-link"
+              >Navigation <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./modal.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
