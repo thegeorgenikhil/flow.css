@@ -251,7 +251,6 @@ html {
 }
 
 .sidenav-toggle {
-  display: none;
   border: none;
   color: white;
   background-color: var(--color-primary);
@@ -262,9 +261,9 @@ html {
   margin: 2px;
   border-radius: var(--border-rounded);
   padding: 10px 12px;
-  position: absolute;
+  position: fixed;
   z-index: 201;
-  bottom: 2rem;
+  bottom: 4rem;
   right: 10px;
 }
 
