@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./simplified-grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <title>Components - Grids</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-brand">
+          <a href="/" class="wavy-underline format-link">flow.css</a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a
+              href="../../get-started/installation/installation.html"
+              class="format-link"
+              >Docs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil/flow.css"
+              class="format-link nav-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/thegeorgenikhil"
+              class="format-link nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-container">
+        <aside class="side-nav">
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">QUICK START</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li>
+                <a
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
+                  >Installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/colors/colors.html"
+                  class="group-item"
+                  >Colors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/typography/typography.html"
+                  class="group-item"
+                  >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/customize/customize.html"
+                  class="group-item"
+                  >Customize</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../get-started/conclusion/conclusion.html"
+                  class="group-item"
+                  >Conclusion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-grouping">
+            <h5 class="group-heading">COMPONENTS</h5>
+            <div class="divider-sm"></div>
+            <ul class="group-items">
+              <li><a href="" class="group-item">Avatar</a></li>
+              <li><a href="" class="group-item">Alert</a></li>
+              <li><a href="" class="group-item">Badge</a></li>
+              <li><a href="" class="group-item">Button</a></li>
+              <li><a href="" class="group-item">Card</a></li>
+              <li><a href="" class="group-item">Image</a></li>
+              <li><a href="" class="group-item">Input</a></li>
+              <li><a href="" class="group-item">List</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="docs-container">
+          <div class="docs-content">
+            <h1 class="docs-heading">Grids</h1>
+            <p class="docs-primary-content">
+              Use the powerful capabilities of grids to build layouts of all
+              shapes and sizes
+            </p>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Simplified Two Column Grids</h2>
+            <p class="docs-secondary-content">
+              A 2-column grid with a breakpoint at 600px( <small><em>1-column</em></small> )
+            </p>
+            <div class="display-container">
+              <div class="grid-col-2">
+                <div class="grid-column">Column 1</div>
+                <div class="grid-column">Column 2</div>
+                <div class="grid-column">Column 3</div>
+                <div class="grid-column">Column 4</div>
+                <div class="grid-column">Column 5</div>
+                <div class="grid-column">Column 6</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="grid-col-2"&gt;
+            &lt;div class="grid-column"&gt;Column 1&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 2&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 3&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 4&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 5&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 6&lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+            <h2 class="docs-sub-heading">Simplified Three Column Grids</h2>
+            <p class="docs-secondary-content">
+              A 3-column grid with a breakpoint at 800px( <small><em>2-column</em></small> ) and 600px( <small><em>1-column</em></small> )
+            </p>
+            <div class="display-container">
+              <div class="grid-col-3">
+                <div class="grid-column">Column 1</div>
+                <div class="grid-column">Column 2</div>
+                <div class="grid-column">Column 3</div>
+                <div class="grid-column">Column 4</div>
+                <div class="grid-column">Column 5</div>
+                <div class="grid-column">Column 6</div>
+              </div>
+            </div>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;div class="grid-col-3"&gt;
+            &lt;div class="grid-column"&gt;Column 1&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 2&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 3&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 4&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 5&lt;/div&gt;
+            &lt;div class="grid-column"&gt;Column 6&lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="docs-footer">
+            <a href="../Rating/rating.html" class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Rating</a
+            >
+            <a href="../Slider/slider.html" class="footer-link format-link"
+              >Slider <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
