@@ -9,3 +9,9 @@ sideNavToggle.addEventListener("click",() => {
     sideNavOverlay.classList.toggle("show");
     sideNavToggleIcon.classList.toggle("fa-times")
 })
+
+sideNavOverlay.addEventListener("click",() => {
+    sideNav.classList.toggle("sidenav-show");
+    sideNavOverlay.classList.toggle("show");
+    sideNavToggleIcon.classList.toggle("fa-times")
+})
