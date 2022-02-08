@@ -55,7 +55,7 @@
         </ul>
       </nav>
       <main class="main-container">
-        <aside class="side-nav">
+        <aside class="side-nav" id="side-nav">
           <div class="side-nav-grouping">
             <h5 class="group-heading">QUICK START</h5>
             <div class="divider-sm"></div>
@@ -528,7 +528,12 @@
         </div>
       </main>
     </div>
+    <button type="button" class="sidenav-toggle" id="sidenav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidenav-overlay" id="sidenav-overlay"></div>
 
+    <script src="../../sidebar.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

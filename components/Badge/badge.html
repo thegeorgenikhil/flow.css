@@ -55,7 +55,7 @@
         </ul>
       </nav>
       <main class="main-container">
-        <aside class="side-nav">
+        <aside class="side-nav" id="side-nav">
           <div class="side-nav-grouping">
             <h5 class="group-heading">QUICK START</h5>
             <div class="divider-sm"></div>
@@ -209,7 +209,6 @@
                 </pre>
             </div>
             <div class="divider"></div>
-            <!-- // TODO: Button Badges - inside and floating (will be made after making the button component) -->
           </div>
           <div class="docs-footer">
             <a href="../Alert/alert.html" class="footer-link format-link"
@@ -222,7 +221,12 @@
         </div>
       </main>
     </div>
+    <button type="button" class="sidenav-toggle" id="sidenav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidenav-overlay" id="sidenav-overlay"></div>
 
+    <script src="../../sidebar.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

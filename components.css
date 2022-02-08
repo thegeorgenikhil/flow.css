@@ -33,6 +33,7 @@ html {
   --color-white: #ffffff;
 
   --color-form-gray:#aaa9a966;
+  --color-star-gold:#FDCC0D;
 
   --color-display-container: #f8f9fa;
   --color-markdown:#434750;
@@ -71,6 +72,9 @@ html {
   /* BOX SHADOW */
   --shadow-sm:0px 2px 15px rgba(0,0,0,0.05);
   --shadow-base:0px 2px 15px rgba(0,0,0,0.15);
+
+
+  --shadow-full:20vw 2px 15px rgba(0,0,0,0.15);
 }
 
 
