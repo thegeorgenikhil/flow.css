@@ -10,6 +10,8 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./toast.css" />
+    <link rel="stylesheet" href="../Button/button.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -22,7 +24,7 @@
       integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
       crossorigin="anonymous"
     />
-    <title>flow.css - Installation</title>
+    <title>Components - Toast</title>
   </head>
   <body>
     <div class="container">
@@ -32,7 +34,7 @@
         </div>
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="../installation/installation.html" class="format-link"
+            <a href="../../get-started/installation/installation.html" class="format-link"
               >Docs</a
             >
           </li>
@@ -63,31 +65,31 @@
             <ul class="group-items">
               <li>
                 <a
-                  href="../installation/installation.html"
-                  class="group-item active"
+                  href="../../get-started/installation/installation.html"
+                  class="group-item"
                   >Installation</a
                 >
               </li>
               <li>
-                <a href="../colors/colors.html" class="group-item">Colors</a>
+                <a href="../../get-started/colors/colors.html" class="group-item">Colors</a>
               </li>
               <li>
-                <a href="../typography/typography.html" class="group-item"
+                <a href="../../get-started/typography/typography.html" class="group-item"
                   >Typography</a
                 >
               </li>
               <li>
-                <a href="../utilities/utilities.html" class="group-item"
+                <a href="../../get-started/utilities/utilities.html" class="group-item"
                   >Utilities</a
                 >
               </li>
               <li>
-                <a href="../customize/customize.html" class="group-item"
+                <a href="../../get-started/customize/customize.html" class="group-item"
                   >Customize</a
                 >
               </li>
               <li>
-                <a href="../conclusion/conclusion.html" class="group-item"
+                <a href="../../get-started/conclusion/conclusion.html" class="group-item"
                   >Conclusion</a
                 >
               </li>
@@ -110,83 +112,103 @@
               <li><a href="../../components/Rating/rating.html" class="group-item">Rating</a></li>
               <li><a href="../../components/SimplifiedGrid/simplified-grid.html" class="group-item">Simplified Grid</a></li>
               <li><a href="../../components/Slider/slider.html" class="group-item">Slider</a></li>
-              <li><a href="../../components/Toast/toast.html" class="group-item">Toast</a></li>
+              <li><a href="../../components/Toast/toast.html" class="group-item active">Toast</a></li>
             </ul>
           </div>
         </aside>
         <div class="docs-container">
           <div class="docs-content">
-            <h1 class="docs-heading">Introduction</h1>
+            <h1 class="docs-heading">Toast</h1>
             <p class="docs-primary-content">
-              <strong class="color-primary">flow.css</strong> is a free and
-              open-source CSS framework directed at responsive and modular
-              front-end web development. It contains CSS based design templates
-              for typography, forms, buttons, navigation, and other interface
-              components.
+                Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.
             </p>
             <div class="divider"></div>
-            <h2 class="docs-sub-heading">Installation Guide</h2>
-            <h3 class="text-regular color-secondary">->CSS</h3>
+            <h2 class="docs-sub-heading">Basic Dismissible Toast</h2>
+            <p class="docs-secondary-content">You can customize the background colors of the toast using the background-color utility class</p>
+            <div class="display-container flex justify-center">
+                <button class="btn bg-primary" id="toast-btn">Show Toast</button>
+            </div>
+            <div class="toast bg-danger" id="toast">
+                <div class="toast-header">
+                    <div class="toast-heading">
+                        Uh,oh!
+                    </div>
+                    <span class="toast-dismiss" id="toast-dismiss"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="toast-divider"></div>
+                <div class="toast-body">Look like you internet connection dropped. Try connecting again</div>
+            </div>
+            <p class="text-md font-semibold">CSS</p>
+            <div class="code-container">
+              <pre>
+                      <code class="language-html">
+        &lt;!-- TOAST BUTTON --&gt;
+        &lt;button class="btn bg-primary" id="toast-btn"&gt;Show Toast&lt;/button&gt;
+
+        &lt;!-- TOAST --&gt;
+        &lt;div class="toast bg-danger" id="toast"&gt;
+          &lt;div class="toast-header"&gt;
+              &lt;div class="toast-heading"&gt;Uh,oh!&lt;/div&gt;
+              &lt;span class="toast-dismiss" id="toast-dismiss"&gt;&lt;i class="fas fa-times"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="toast-divider"&gt;&lt;/div&gt;
+          &lt;div class="toast-body"&gt;Look like you internet connection dropped. Try connecting again&lt;/div&gt;
+        &lt;/div&gt;
+                      </code>
+                  </pre>
+            </div>
+            <p class="text-md font-semibold">Custom JS</p>
             <p class="docs-secondary-content">
-              Copy-paste the stylesheet &lt;link&gt; into your &lt;head&gt;
-              <strong><em>before</em></strong> all other stylesheets to load our
-              CSS.
+              Place the following script near the end of your pages, right
+              before the closing
+              <code class="markdown-code">&lt;/body&gt;</code> tag, to enable
+              them.
             </p>
             <div class="code-container">
               <pre>
-                <code class="language-html">
-                  &lt;link rel="stylesheet" href="https://flow-css.netlify.app/components.css"&gt;
-                </code>
-              </pre>
+                      <code class="language-js">
+        // Add this script  
+        &lt;script&gt;
+            const toast = document.getElementById("toast");
+            const toastBtn = document.getElementById("toast-btn");
+            const toastDismiss = document.getElementById("toast-dismiss");
+                                  
+            toastBtn.addEventListener("click", () => {
+              toast.classList.add("toast-show");
+              setTimeout(() => {
+                toast.classList.remove("toast-show");
+              },5000);
+            });
+            
+            toastDismiss.addEventListener("click", () => {
+              toast.classList.remove("toast-show");
+            });
+        &lt;/script&gt;
+                      </code>
+                  </pre>
             </div>
             <div class="divider"></div>
-            <h2 class="docs-sub-heading">Starter Template</h2>
-            <p class="docs-secondary-content">
-              Be sure to have your pages set up with the latest design and
-              development standards. That means using an HTML5 doctype and
-              including a viewport meta tag for proper responsive behaviors. Put
-              it all together and your pages should look like this:
-            </p>
-            <div class="code-container">
-              <pre>
-                    <code class="language-html">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;!-- Required meta tags --&gt;
-                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                            &lt;!-- flow.css --&gt;
-                            &lt;link rel="stylesheet" href="https://flow-css.netlify.app/components.css"&gt;
-                            &lt;title&gt;flow.css&lt;/title&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt;
-                            &lt;h1 class="color-primary"&gt;Hello World&lt;/h1&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
-                    </code>
-                </pre>
-            </div>
           </div>
-          <div class="divider"></div>
           <div class="docs-footer">
-            <a href="/" class="footer-link format-link"
-              ><i class="fas fa-angle-left"></i> Home</a
+            <a
+              href="../Slider/slider.html"
+              class="footer-link format-link"
+              ><i class="fas fa-angle-left"></i> Slider</a
             >
-            <a href="../colors/colors.html" class="footer-link format-link"
-              >Colors <i class="fas fa-angle-right"></i
+            <a href="https://github.com/thegeorgenikhil/flow.css" class="footer-link format-link"
+              >Github Repo <i class="fas fa-angle-right"></i
             ></a>
           </div>
         </div>
       </main>
     </div>
-    <button type="button" class="sidenav-toggle" id="sidenav-toggle">
+<button type="button" class="sidenav-toggle" id="sidenav-toggle">
       <i class="fas fa-bars"></i>
     </button>
     <div class="sidenav-overlay" id="sidenav-overlay"></div>
 
     <script src="../../sidebar.js"></script>
+    <script src="./toast.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
