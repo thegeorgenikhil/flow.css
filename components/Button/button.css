@@ -63,6 +63,10 @@
   */
 }
 
+.btn-outline:hover{
+  opacity: 100%;
+}
+
 .btn-outline-primary {
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
