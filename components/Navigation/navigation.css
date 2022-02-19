@@ -8,7 +8,8 @@
 
 .navbar-container {
   padding: 1rem;
-  box-shadow: var(--shadow-base);
+  display: flex;
+  align-items: center;
 }
 
 .navbar-main {
