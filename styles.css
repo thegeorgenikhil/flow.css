@@ -105,6 +105,10 @@ html {
   -moz-text-fill-color: transparent;
 }
 
+.btn{
+  margin: 2px;
+}
+
 .btn-container {
   margin: 2rem;
 }
